@@ -9,24 +9,24 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
-import { PorfolioComponent } from './components/porfolio/porfolio.component';
 
 import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     PortafolioComponent,
-    AboutComponent,
-    PorfolioComponent
+    AboutComponent
   ],
   imports: [
     HttpModule,
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [InformacionService],
+  providers: [InformacionService,
+    ProductosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

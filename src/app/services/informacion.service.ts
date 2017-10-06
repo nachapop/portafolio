@@ -14,6 +14,6 @@ export class InformacionService {
   }
   private getTeamData(): void {
     this.http.get("https://api-project-101954137644.firebaseio.com/equipo.json")
-      .subscribe(data => { this.equipo = data.json(); console.log(this.equipo) })
+      .subscribe(data => this.equipo = data.json())
   }
 }
