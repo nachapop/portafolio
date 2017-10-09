@@ -12,13 +12,15 @@ import { AboutComponent } from './components/about/about.component';
 
 import { InformacionService } from './services/informacion.service';
 import { ProductosService } from './services/productos.service';
+import { ProductoComponent } from './components/producto/producto.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     PortafolioComponent,
-    AboutComponent
+    AboutComponent,
+    ProductoComponent
   ],
   imports: [
     HttpModule,

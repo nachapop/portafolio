@@ -11,5 +11,7 @@ export class ProductosService {
         this.loading = false
       });
   }
-
+  obtenerDatosProduto(cod: string) {
+    return this.http.get("https://api-project-101954137644.firebaseio.com/productos/" + cod + ".json");
+  }
 }
