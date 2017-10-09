@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class PortafolioComponent {
 
-  constructor(private _ps: ProductosService, private router: Router) { }
+  constructor(public _ps: ProductosService, private router: Router) { }
   ver_producto(cod: string) {
     console.log(cod);
     this.router.navigate(['/producto', cod]);
